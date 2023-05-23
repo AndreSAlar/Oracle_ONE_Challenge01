@@ -1,0 +1,161 @@
+@font-face {
+    font-family: 'Inter';
+    src: url("fonts/Inter-VariableFont_slnt\,wght.ttf") format('truetype');
+    font-style: normal;
+    font-weight: normal;
+  }
+  
+ *{
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+ } 
+
+body{
+    background: #e9ecf4;
+}
+
+.logo{
+    padding-top: 30px;
+    margin-left: 210px;
+    margin-bottom: 30px;
+    width: 15%;
+}
+
+main{
+    display: flex;
+    margin: 0 0 50px 80px;
+    justify-content: center;
+}
+
+#original_message{
+    background: none;
+    border: none;
+    color: #0A3871;
+    margin-top: 0px;
+    text-transform: lowercase;
+    padding: 10px 5px;
+    border-radius: 10px;
+    height: 300px;
+    width: 350px;
+    resize: none;
+}
+::placeholder{
+    color: #0A3871;
+}
+#original_message:focus{
+    outline-style: dashed;
+    outline-color: rgb(216, 228, 250);
+}
+.vector{
+    width: 3%;
+}
+
+
+
+.encrypted_zone{
+    margin-left: 80px;
+    background: #FFFFFF;
+    border: none;
+    border-radius: 10px;
+    height: 400px;
+    width: 350px;
+}
+#encrypted_message{
+    padding: 10px 5px;
+    color: #0A3871;
+    border: none;
+    border-radius: 10px;
+    width: 97%;
+    height: 84%;
+    padding: 4px;
+    resize: none;
+    /* position: fixed;  */
+}
+#encrypted_message:focus{
+    outline: none;
+}
+#encrypted_message:empty{
+    background-image: url(images/muneco.svg);
+    background-repeat: no-repeat;
+}
+
+.fuctions{
+    display: flex;
+    margin-top: 18px;
+    width: 300px;
+    gap: 8px;
+}
+
+
+.encript{
+    background-color: #0A3871;
+    border: 1px solid #0A3871;
+    border-radius: 8px;
+    color: #ffffff;
+    cursor: pointer;
+    height: 27px;
+    width: 330px;
+
+}
+
+.decypt{
+    border: 1px solid #0A3871;
+    border-radius: 8px;
+    color: #0A3871;
+    cursor: pointer;
+    height: 27px;
+    width: 330px;
+    
+}
+
+.actions{
+    display: none;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 10px;
+}
+.clean,.copy,.hear{
+    height: 8%;
+    width: 8%;
+}
+.clean:hover,.copy:hover,.hear:hover{
+    cursor: pointer;
+    background-color: rgb(231, 238, 250);
+    border-radius: 30%;
+}
+.clean:active,.copy:active,.hear:active{
+    background-color: rgb(191, 212, 247);
+    border-radius: 40%;
+    height: 7%;
+    width: 7%;
+
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 360px) {
+    .body{
+        background: url(images/BG_ZOOM_ONE_ESP_disp_azul.png);
+        background-size: auto;
+    }    
+ }
+
+/*
+width: 90%;
+max-width: 1000px;
+ margin: 30px auto;
+ display: grid;
+ grid-gap: 10px; 
+ grid-template-columns: repeat(3, 1fr);
+ grid-template-rows: repeat(4, auto);
+
+ grid-template-areas: "div1 div1 div1 div1" 
+                     "div2 div2 div2 div2";
+
+                     */
