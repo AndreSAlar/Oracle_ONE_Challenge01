@@ -38,7 +38,7 @@ main {
 
 
 #original_message {
-    background: none;
+    background: #e6ecfbb7;
     border: none;
     color: #0A3871;
     margin-top: 0px;
@@ -49,7 +49,7 @@ main {
     width: 100%;
     resize: none;
     outline-style: dashed;
-    outline-color: rgb(223, 234, 252);
+    outline-color: rgba(183, 207, 248, 0.13);
 }
 
 ::placeholder {
@@ -63,14 +63,17 @@ main {
     outline-style: dashed;
     outline-color: rgb(199, 216, 247);
 }
-
+#original_message:focus::placeholder {
+    color: transparent;
+    text-shadow: none;
+}
 .vector {
     width: 3%;
 }
 
 .encrypted_zone {
     margin-left: 5vw;
-    background: #FFFFFF;
+    background: #fffffff1;
     border: none;
     border-radius: 10px;
     height: 60vh;
@@ -119,6 +122,14 @@ main {
     height: 27px;
     width: 330px;
 }
+.encript:hover {
+    color: #e4e1f7;
+}
+.encript:active {
+    border: 1px solid #6b8cb3;
+    color: #e4e1f7;
+    font-weight: 600;
+}
 
 .decypt {
     border: 1px solid #0A3871;
@@ -165,11 +176,6 @@ main {
 
 /* ---------- MEDIA QUERY PARA WIDTH < 650px------*/
 @media screen and (max-width: 700px) {
-    .body {
-        background: url(images/BG_ZOOM_ONE_ESP_disp_azul.png);
-        background-size: auto;
-    }
-
     main {
         flex-direction: column;
     }
