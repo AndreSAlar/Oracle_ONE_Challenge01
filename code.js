@@ -32,11 +32,6 @@ function validateMessage(){ // esta funcion valida si los caracteres ingresados 
     if (msgError.children.length === 0) { // si no hay hijos en msgError... y no har error que mostrar
         return true; // no hay errores y se podrá encriptar el mensaje       
     } 
-    /*if (msg.length === 0 || msg == null) {// validar si mesaje vien evacio
-        return true;      
-        p.textContent= `Error: no hay textooooooooooooooooooooooooo`;   
-    } */  
-
         return false;  // existen letras no validas, no se puede encriptar mensaje
 }
 
