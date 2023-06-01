@@ -26,7 +26,6 @@ body {
 main {
     margin: 0 50px;
     display: flex;
-
     justify-content: center;
     align-items: center;
 }
@@ -69,8 +68,6 @@ main {
     width: 3%;
 }
 
-
-
 .encrypted_zone {
     margin-left: 5vw;
     background: #FFFFFF;
@@ -91,19 +88,17 @@ main {
     resize: none;
     align-items: center;
     justify-content: center;
-    /* position: fixed;  */
 }
 
 #encrypted_message:focus {
     outline: none;
 }
 
-#encrypted_message:empty {    
+#encrypted_message:empty {
     background-image: url(images/muneco.svg);
     background-repeat: no-repeat;
     background-size: auto;
-    background-position: cover;  
-
+    background-position: cover;
 }
 
 .fuctions {
@@ -123,7 +118,6 @@ main {
     cursor: pointer;
     height: 27px;
     width: 330px;
-
 }
 
 .decypt {
@@ -133,7 +127,6 @@ main {
     cursor: pointer;
     height: 27px;
     width: 330px;
-
 }
 
 .actions {
@@ -148,6 +141,7 @@ main {
 .hear {
     height: 6%;
     width: 6%;
+
 }
 
 .clean:hover,
@@ -165,11 +159,7 @@ main {
     border-radius: 40%;
     height: 7%;
     width: 7%;
-
 }
-
-
-
 
 
 
@@ -182,8 +172,6 @@ main {
 
     main {
         flex-direction: column;
-
-
     }
 
     .group {
@@ -197,7 +185,6 @@ main {
     #original_message {
         height: 25vh;
         width: 100%;
-
     }
 
     .encrypted_zone {
@@ -206,25 +193,9 @@ main {
         margin-left: 0px;
         width: 100%;
     }
-    #encrypted_message{
+
+    #encrypted_message {
         width: 97%;
         height: 75%;
     }
 }
-
-
-
-/*
-
-width: 90%;
-max-width: 1000px;
- margin: 30px auto;
- display: grid;
- grid-gap: 10px; 
- grid-template-columns: repeat(3, 1fr);
- grid-template-rows: repeat(4, auto);
-
- grid-template-areas: "div1 div1 div1 div1" 
-                     "div2 div2 div2 div2";
-
-                     */
