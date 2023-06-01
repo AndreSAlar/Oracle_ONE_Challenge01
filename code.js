@@ -19,6 +19,7 @@ function validateMessage(){ // esta funcion valida si los caracteres ingresados 
     var msg=original_message.value;
     let validLetters="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"; // lista de caracteres admitiddos
     let msgError=document.createDocumentFragment();
+    
     for (let letter of msg) { //recorre la cadena del mensaje, validando que contenga solo letras definidas en validLetters
         if (!validLetters.includes(letter)) { //si falso que: mensaje contiene letras validas, se crea el elemento html de parrafo de mensaje error
             let p=document.createElement("p");  //crea elemento parrafo

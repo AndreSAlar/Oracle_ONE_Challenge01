@@ -3,33 +3,42 @@
     src: url("fonts/Inter-VariableFont_slnt\,wght.ttf") format('truetype');
     font-style: normal;
     font-weight: normal;
-  }
-  
- *{
+}
+
+* {
     font-family: 'Inter';
     font-weight: 400;
     font-size: 12px;
     line-height: 150%;
- } 
+}
 
-body{
+body {
     background: #e9ecf4;
 }
 
-.logo{
-    padding-top: 30px;
-    margin-left: 210px;
+.logo {
+    padding-top: 20px;
+    margin-left: 100px;
     margin-bottom: 30px;
     width: 15%;
 }
 
-main{
+main {
+    margin: 0 50px;
     display: flex;
-    margin: 0 0 50px 80px;
+
     justify-content: center;
+    align-items: center;
 }
 
-#original_message{
+.group {
+    justify-content: space-between;
+    align-items: center;
+    width: 40vw;
+}
+
+
+#original_message {
     background: none;
     border: none;
     color: #0A3871;
@@ -37,59 +46,76 @@ main{
     text-transform: lowercase;
     padding: 10px 5px;
     border-radius: 10px;
-    height: 300px;
-    width: 350px;
+    height: 50vh;
+    width: 100%;
     resize: none;
-}
-::placeholder{
-    color: #0A3871;
-}
-#original_message:focus{
     outline-style: dashed;
-    outline-color: rgb(216, 228, 250);
+    outline-color: rgb(223, 234, 252);
 }
-.vector{
+
+::placeholder {
+    color: #000000;
+    text-align: center;
+    font-weight: 700;
+    text-shadow: 1px 1px 2px rgb(7, 42, 89), 0 0 1em rgb(131, 164, 254), 0 0 0.2em blue;
+}
+
+#original_message:focus {
+    outline-style: dashed;
+    outline-color: rgb(199, 216, 247);
+}
+
+.vector {
     width: 3%;
 }
 
 
 
-.encrypted_zone{
-    margin-left: 80px;
+.encrypted_zone {
+    margin-left: 5vw;
     background: #FFFFFF;
     border: none;
     border-radius: 10px;
-    height: 400px;
-    width: 350px;
+    height: 60vh;
+    width: 100%;
 }
-#encrypted_message{
-    padding: 10px 5px;
+
+#encrypted_message {
+    padding: 20px 5px;
     color: #0A3871;
     border: none;
     border-radius: 10px;
     width: 97%;
-    height: 84%;
+    height: 85%;
     padding: 4px;
     resize: none;
+    align-items: center;
+    justify-content: center;
     /* position: fixed;  */
 }
-#encrypted_message:focus{
+
+#encrypted_message:focus {
     outline: none;
 }
-#encrypted_message:empty{
+
+#encrypted_message:empty {    
     background-image: url(images/muneco.svg);
     background-repeat: no-repeat;
+    background-size: auto;
+    background-position: cover;  
+
 }
 
-.fuctions{
+.fuctions {
     display: flex;
-    margin-top: 18px;
-    width: 300px;
-    gap: 8px;
+    justify-content: center;
+    margin: 10px;
+    width: 3fr;
+    gap: 10px;
 }
 
 
-.encript{
+.encript {
     background-color: #0A3871;
     border: 1px solid #0A3871;
     border-radius: 8px;
@@ -100,32 +126,41 @@ main{
 
 }
 
-.decypt{
+.decypt {
     border: 1px solid #0A3871;
     border-radius: 8px;
     color: #0A3871;
     cursor: pointer;
     height: 27px;
     width: 330px;
-    
+
 }
 
-.actions{
-    display: none;
+.actions {
+    display: flex;
     justify-content: center;
     gap: 30px;
     margin-top: 10px;
 }
-.clean,.copy,.hear{
-    height: 8%;
-    width: 8%;
+
+.clean,
+.copy,
+.hear {
+    height: 6%;
+    width: 6%;
 }
-.clean:hover,.copy:hover,.hear:hover{
+
+.clean:hover,
+.copy:hover,
+.hear:hover {
     cursor: pointer;
     background-color: rgb(231, 238, 250);
     border-radius: 30%;
 }
-.clean:active,.copy:active,.hear:active{
+
+.clean:active,
+.copy:active,
+.hear:active {
     background-color: rgb(191, 212, 247);
     border-radius: 40%;
     height: 7%;
@@ -138,15 +173,49 @@ main{
 
 
 
-
-@media screen and (max-width: 360px) {
-    .body{
+/* ---------- MEDIA QUERY PARA WIDTH < 650px------*/
+@media screen and (max-width: 700px) {
+    .body {
         background: url(images/BG_ZOOM_ONE_ESP_disp_azul.png);
         background-size: auto;
-    }    
- }
+    }
+
+    main {
+        flex-direction: column;
+
+
+    }
+
+    .group {
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        height: 40vh;
+        margin-bottom: 2vh;
+    }
+
+    #original_message {
+        height: 25vh;
+        width: 100%;
+
+    }
+
+    .encrypted_zone {
+        height: 35vh;
+        width: 100%;
+        margin-left: 0px;
+        width: 100%;
+    }
+    #encrypted_message{
+        width: 97%;
+        height: 75%;
+    }
+}
+
+
 
 /*
+
 width: 90%;
 max-width: 1000px;
  margin: 30px auto;
