@@ -97,8 +97,8 @@ main {
 #encrypted_message:empty {
     background-image: url(images/muneco.svg);
     background-repeat: no-repeat;
-    background-size: auto;
-    background-position: cover;
+    background-size: contain;
+    background-position: center;
 }
 
 .fuctions {
